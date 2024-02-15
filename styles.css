@@ -18,7 +18,6 @@ button:hover{
   cursor: pointer;
 }
 
-
 .main-container {
   max-width: 100%;
   height: 100vh;
@@ -93,6 +92,7 @@ button:hover{
 }
 
 .todo__display__item > * {
+  /* padding-bottom: .1rem; */
   border-bottom: 1px solid hsla(30, 0%, 0%, .5);
 }
 
@@ -141,7 +141,6 @@ button:hover{
 .todo__delete-btn:hover{
   border: 1px solid hsla(0, 60%, 40%, 1);
   color: hsla(0, 60%, 40%, 1);
-  scale: 1.1;
 }
 
 .todo__edit-btn{
@@ -151,5 +150,4 @@ button:hover{
 .todo__edit-btn:hover{
   border: 1px solid hsla(210, 60%, 40%, 1);
   color: hsla(210, 60%, 40%, 1);
-  scale: 1.1;
 }
