@@ -1,19 +1,20 @@
-import { getNewTask } from "./src/getNewTask.js";
-
-const tasksList = [];
+import { addNewTask } from "./src/addNewTask.js";
+import { getLocalStorage } from "./src/displayTaskList.js";
+import { toDoList } from "./src/toDoDataDB.js";
 
 const inputNewTask = document.querySelector('.add-task-input');
 const addNewTaskBtn = document.querySelector('.add-task-btn');
 
-console.log(inputNewTask)
+getLocalStorage();
 
 const getInput = function getInputTextOnEnter(e) {
   if (e.keyCode === 13 || e.key === 'Enter'){
     if(!inputNewTask.value.trim()){ 
       return;
     }
-    let inputTask = inputNewTask.value;
-    console.log(inputTask)
+    let inputTaskData = inputNewTask.value;
+    addNewTask(inputTaskData);
+    getLocalStorage();
   } 
 }
 
@@ -22,8 +23,9 @@ const getInputBtn = function getInputTextOnClick(){
     return;
   }
 
-  let inputTask = inputNewTask.value;
-  console.log(inputTask)
+  let inputTaskData = inputNewTask.value;
+  addNewTask(inputTaskData);
+  getLocalStorage();
 }
 
 
