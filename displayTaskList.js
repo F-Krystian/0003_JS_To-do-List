@@ -1,5 +1,5 @@
 const listContainer = document.querySelector('.todo__display-tasks-box');
-import { toDoList } from "../src/toDoDataDB.js";
+import { toDoList } from "./toDoDataDB.js";
 
 const getLocalStorage = function () {
   let getLocalStorage = localStorage.getItem('toDoDB');
