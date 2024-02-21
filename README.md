@@ -2,12 +2,12 @@
 This project is a simple ToDo list application built using HTML, CSS, and JavaScript. It utilizes browser's local storage to persist data and is modularized into separate JavaScript files for better organization and maintainability.
 
 ## Features
-Add new tasks to the list
-Check off completed tasks
-Edit existing tasks
-Delete tasks
-Update local storage with changes
-Display all tasks on the UI
+Add new tasks to the list  
+Check off completed tasks  
+Edit existing tasks  
+Delete tasks  
+Update local storage with changes  
+Display all tasks on the UI  
 
 
 ## Modules
