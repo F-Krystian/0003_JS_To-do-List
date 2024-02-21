@@ -4,24 +4,9 @@ import { displayToDoList, clearToDoListUI, editChangesUI } from "./todoUI.js";
 let toDoList = getToDoList();
 
 const addToDoTask = function(newTask) {
-  //   let newTaskItem = {
-  //   id: toDoList.length + 1,
-  //   text: newTask,
-  //   status : 'pending'
-  // }
-
-  // toDoList.push(newTaskItem);
-
-  // clearToDoListUI();  
-  // saveToDoList(toDoList);
-  // displayToDoList(getToDoList())
-  console.log(toDoList);
-
   let maxId = toDoList.reduce((max, task) => {
     return  Math.max(max, task.id)
   }, 0);
-
-
 
   let newTaskItem = {
     id: parseInt(maxId) + 1,
