@@ -1,4 +1,4 @@
-import { addToDoTask } from "./todoList.js";
+import { addToDoTask , deleteToDoTask , editToDoTask , checkToDotask} from "./todoList.js";
 
 const handleAddTask = function() {
   const inputText = document.querySelector('.add-task-input');
@@ -23,15 +23,40 @@ const handleAddTask = function() {
 }
 
 const handleEditTask = function() {
-  console.log('Edit')
+  const toDoListContainer = document.querySelector('.todo__display-tasks-box');
+// Add event listener to the todo list container 
+  toDoListContainer.addEventListener('click', (e) =>{
+    const editBtn = e.target.closest('.todo__edit-btn');
+    if(editBtn) {
+      editToDoTask(editBtn);
+    }
+  })
 }
 
+
+
 const handleDeleteTask = function() {
-  console.log('Delete')
+
+  const toDoListContainer = document.querySelector('.todo__display-tasks-box');
+// Add event listener to the todo list container
+  toDoListContainer.addEventListener('click', (e) =>{
+    const deleteBtn = e.target.closest('.todo__delete-btn');
+    if(deleteBtn){
+      deleteToDoTask(deleteBtn);
+    }
+  })
+
 }
 
 const handleToggleTask = function() {
-  console.log('Toggle')
+  const toDoListContainer = document.querySelector('.todo__display-tasks-box');
+// Add event listener to the todo list container
+  toDoListContainer.addEventListener('click', (e) => {
+    const checkBtn = e.target.closest('.todo__display__item-check');
+    if(checkBtn){
+      checkToDotask(checkBtn);
+    }
+  })
 }
 
 export { 

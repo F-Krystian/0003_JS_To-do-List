@@ -151,3 +151,15 @@ button:hover{
   border: 1px solid hsla(210, 60%, 40%, 1);
   color: hsla(210, 60%, 40%, 1);
 }
+
+/* Edit changes */
+
+.todo__input__item-task{
+  width: 100%;
+  height: 3rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

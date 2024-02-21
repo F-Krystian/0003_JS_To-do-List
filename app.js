@@ -9,6 +9,9 @@ const initApp = function () {
   displayToDoList(dataArray);
 
   handleAddTask();
+  handleDeleteTask(); 
+  handleEditTask();
+  handleToggleTask();
 }
 
 
