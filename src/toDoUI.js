@@ -2,7 +2,7 @@ const displayToDoList = function (todoList) {
   const todoListDisplayData = todoList.map((item) =>{
     let checkStatus = item.status === 'done' ? 'checked' : '';
     let singleItem = `
-    <div class="todo__display__item" data-id="${item.id}" data-status="${item.status}">
+    <div class="todo__display__item" draggable="true" data-id="${item.id}" data-status="${item.status}">
     <div class="todo__display__item-checkbox">
       <input type="checkbox" name="todo__display__item-check" id="todo__display__item-check" class="todo__display__item-check" ${checkStatus}>
     </div>

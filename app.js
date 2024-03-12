@@ -1,7 +1,7 @@
 import { getToDoList } from "./src/storage.js"; 
 import { displayToDoList, clearToDoListUI } from "./src/todoUI.js";
 import { handleAddTask, handleEditTask, handleDeleteTask, handleToggleTask } from "./src/eventHandlers.js"
-
+import { sortItems } from "./src/dragAndDrop.js";
 const initApp = function () {
   const dataArray = getToDoList();
 
@@ -12,6 +12,7 @@ const initApp = function () {
   handleDeleteTask(); 
   handleEditTask();
   handleToggleTask();
+  sortItems();
 }
 
 
